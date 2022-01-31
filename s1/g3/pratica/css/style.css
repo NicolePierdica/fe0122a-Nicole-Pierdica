@@ -1,0 +1,15 @@
+header{
+    background-color: blueviolet;
+    padding: 24px;
+    border: chartreuse 10px dotted;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.link{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: deeppink;
+    
+}

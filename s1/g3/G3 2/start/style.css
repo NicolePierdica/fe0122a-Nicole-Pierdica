@@ -1,0 +1,172 @@
+header {
+    
+    font-family: 'Raleway', sans-serif;
+    background-color: cornflowerblue;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 60px;
+    
+    line-height: 40px;
+    
+
+}
+#intestazione {
+    color: white;
+    font-size: 20px
+}
+
+#nome {
+    background-color: white;
+    color: cornflowerblue;
+}
+
+#lavoro {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    color: rgb(30, 31, 29);
+   
+}
+
+#titolo {
+    border: 5px solid darkviolet;
+}
+
+#info {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkviolet;
+    font-weight: bold;
+    margin: 20px;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    border: 2px solid #eee;
+    padding: 5px;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 20px;
+    color: rgb(48, 49, 47);
+}
+
+figcaption {
+    padding: 10px;
+}
+
+main #info {
+    font-size: 20px;
+}
+
+address {
+    font-weight: bold;
+    padding: 10px;
+    line-height: 17px;
+}
+
+a {
+    font-weight: normal;
+    color: red;
+}
+
+#data {
+    font-weight: normal;
+}
+
+#me {
+    font-weight: bold;
+    padding: 10px;
+}
+
+blockquote {
+    background-color: rgb(212, 209, 209);
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px;
+    line-height: 17px ;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkviolet;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 20px;
+
+}
+
+#presentazione {
+    color: rgb(39, 39, 39);
+    
+}
+
+strong {
+    color: darkviolet;
+}
+
+hr {
+    border-style: dashed;
+    color: rgb(162, 159, 163);
+    
+    
+}
+
+h3 {
+    font-weight: bold;
+    
+}
+
+mark {
+    background-color: darkviolet;
+    color: white;
+}
+
+dd {
+    text-align: center;
+}
+footer {
+    border-top: 6px solid rgb(41, 201, 230);
+    background-color: rgb(75, 71, 75);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    line-height: 18px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+    
+}
+
+kbd {
+    color: yellow;
+    font-style: oblique;
+}
+
+small {
+    color: rgb(175, 169, 175);
+    text-shadow: 0px;
+}
+
+#scarica {
+    text-shadow: 0px;
+}
+
+ul {
+    list-style-type: circle;
+    text-align: center;
+}
+
+
+
+
+

@@ -1,0 +1,54 @@
+.table{
+    color: blue;
+
+}
+
+table.table{
+    width: 100%;
+    border: 1px solid black;
+
+}
+
+.table tr:nth-of-type(odd){
+    background-color: yellow;
+
+}
+
+.table td{
+    border: 1px solid violet;
+}
+ 
+a{
+    display: block;
+    background-color: green;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5%;
+    text-decoration: none;
+    margin-top: 25px;
+    box-shadow: 3px 3px grey;
+    margin-bottom: 25px;
+}
+
+a:hover{
+    background-color: hotpink;
+    color: indigo;
+    width: 200px;
+    transition: all 0.3s;
+}
+
+a::before{
+    content: "<";
+    margin-right: 5px;
+    display: block;
+}
+
+a::after{
+    content: ">";
+    margin-left: 5px;
+    display: block;
+}
+input[name="nome"]{
+    background-color: lightcoral;
+}
