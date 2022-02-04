@@ -1,0 +1,268 @@
+/* IMPOSTAZIONI GENERALI */
+
+
+body {
+    color: #000;
+    font-family: 'Fira sans', sans-serif;
+    line-height: 1.8;
+    font-size: 1.5rem;
+    
+    
+}
+
+main {
+    text-align: center;
+}
+
+    
+   
+
+.btn {
+    padding: 10px 15px;
+    background: linear-gradient(90deg, rgba(105,186,221,1) 15%, rgba(61,57,130,1) 100%);
+    border: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    size: 1.9rem;
+    margin-top: 20px;
+    
+}
+
+p {
+    font-size: 1rem;
+}
+
+.icone {
+    color: red;
+}
+
+
+/* HEADER */
+
+header {
+   display: inline;
+   width: 50%;
+   text-align: center;
+}
+
+header nav li {
+    position: absolute;
+    top: 8.8vh;
+    right: -100%;
+    background-color: white;
+    width: 100vw;
+    height: 5vh;
+}
+
+.btnMenu {
+    display: none;
+}
+
+
+.btnMenu:checked ~ nav ul {
+    right: 0;
+}
+
+.iconMenu {
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    z-index: 1;
+
+}
+
+header nav li {
+    display: inline-block;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: black;
+}
+
+header nav li a{
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+div.testata {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 15px;
+}
+
+div.testata i.fas.fa-ellipsis-h{
+    color: red;
+}
+
+div.social a {
+    color:red;
+    font-size: 25px;
+    
+}
+/* MAIN */
+
+.epico {
+    
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center top;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-align: left;
+    padding: 25px;
+    background-repeat: no-repeat;
+    
+}
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    line-height: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+h2 {
+    font-size: 25px;
+    line-height: 1;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.article {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+
+hr {
+    visibility: hidden;
+}
+
+div.domanda {
+    background-color: #0c0633;
+    color: white;
+    padding: 30px;
+    
+}
+
+
+.icone{
+    color: red;
+}
+
+aside.aside img {
+    width: 300px;
+    text-align: center;
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: rgb(238,238,238);
+    font-size: 1rem;
+    text-align: left;
+    padding: 50px;
+}
+
+.social{
+    margin-bottom: 20px;
+}
+
+
+
+#pFooter{
+    margin-top: 15px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+}
+
+#footeraddress{
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+div#footerIn.chisiamo p{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+div#footerIn.newsletter button.btn {
+    margin: 0;
+}
+
+#footeraddress {
+    text-align: center;
+}
+/* RESPONSIVE */
+
+@media screen and (min-width:768px){
+
+    .epico{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    main .article{
+       flex-direction: row;
+       justify-content: space-between;
+   }
+
+   #articleIn{
+       margin-right: 15px;
+   }
+
+   .insideAside{
+       padding: 20px;
+   }
+
+   aside{
+    display: flex;
+    flex-direction: row;
+}
+
+  aside.aside img{
+      padding: 20px;
+  }
+
+  .footerId {
+      display: flex;
+      flex-direction: row;
+      
+  }
+}
+
+@media screen and (min-widht:1024px) {
+
+    aside.aside {
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 15%;
+        margin-bottom: 25px;
+        
+    }
+    
+}
+
+
