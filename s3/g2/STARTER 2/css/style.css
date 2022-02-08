@@ -1,0 +1,61 @@
+/* line 1, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/style.scss */
+body {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* line 11, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_header.scss */
+header {
+  background-color: antiquewhite;
+}
+
+/* line 13, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_header.scss */
+header nav {
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+}
+
+/* line 17, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_header.scss */
+header nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* line 21, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_header.scss */
+header nav li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #bb4949;
+  text-transform: uppercase;
+  border: 1px dotted #24bb24;
+  border-radius: 25px;
+  padding: 15px;
+  transition: transform 1s;
+}
+
+/* line 30, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_header.scss */
+header nav li a:hover {
+  background-color: pink;
+  transform: scale(1.2, 1.2);
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_sidebar.scss */
+aside {
+  background-color: #f1d3f1;
+}
+
+/* line 4, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_sidebar.scss */
+aside ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+/* line 10, ../../../../../../../../../../../../../Users/user/Desktop/EPICODE/esercitazioni/s3/g2/STARTER 2/scss/_sidebar.scss */
+aside ul li {
+  list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

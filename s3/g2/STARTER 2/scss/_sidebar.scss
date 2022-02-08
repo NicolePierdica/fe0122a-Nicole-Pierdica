@@ -1,0 +1,15 @@
+aside {
+    background-color: rgb(241, 211, 241);
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: $padding-nav;
+        
+        li{
+            list-style: none;
+            
+        }
+    }
+}

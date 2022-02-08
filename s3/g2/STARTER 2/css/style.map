@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_header.scss",
+		"../scss/_sidebar.scss"
+	],
+	"sourcesContent": [
+		"body{\n    font-family: 'Indie Flower', cursive;\n}\n\n\n\n@import 'header.scss';\n@import 'sidebar.scss';",
+		"$padding-nav: 15px;\n$margin-header: 15px;\n\n\n\n\n\n\n\n\nheader {\n    background-color: antiquewhite;\n    nav{\n        text-align: center;\n        font-size: 40px;\n        padding: $padding-nav;\n        li{\n            list-style: none;\n            display: inline-block;\n            margin-right: $margin-header;\n            a{\n                display: inline-block;\n                text-decoration: none;\n                color: rgb(187, 73, 73);\n                text-transform: uppercase;\n                border: 1px dotted rgb(36, 187, 36);\n                border-radius: 25px;\n                padding: $padding-nav;\n                transition: transform 1s;\n                &:hover{\n                    background-color: pink;\n                    transform: scale(1.2, 1.2);\n                }\n            }\n        }\n    }\n}",
+		"aside {\n    background-color: rgb(241, 211, 241);\n    \n    ul{\n        display: flex;\n        flex-direction: column;\n        text-align: center;\n        padding: $padding-nav;\n        \n        li{\n            list-style: none;\n            \n        }\n    }\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,uBAAuB;CACvC;;;ACQD,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,YAAY;CAyBjC;;;AA1BD,AAEI,MAFE,CAEF,GAAG,CAAA;EACC,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;EACf,OAAO,EAfD,IAAI;CAmCb;;;AAzBL,AAMQ,MANF,CAEF,GAAG,CAIC,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,YAAY;EACrB,YAAY,EAlBR,IAAI;CAiCX;;;AAxBT,AAUY,MAVN,CAEF,GAAG,CAIC,EAAE,CAIE,CAAC,CAAA;EACG,OAAO,EAAE,YAAY;EACrB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAgB;EACvB,cAAc,EAAE,SAAS;EACzB,MAAM,EAAE,GAAG,CAAC,MAAM,CAAC,OAAgB;EACnC,aAAa,EAAE,IAAI;EACnB,OAAO,EA3BT,IAAI;EA4BF,UAAU,EAAE,YAAY;CAK3B;;;AAvBb,AAmBgB,MAnBV,CAEF,GAAG,CAIC,EAAE,CAIE,CAAC,AASI,MAAM,CAAA;EACH,gBAAgB,EAAE,IAAI;EACtB,SAAS,EAAE,eAAe;CAC7B;;;AChCjB,AAAA,KAAK,CAAC;EACF,gBAAgB,EAAE,OAAkB;CAavC;;;AAdD,AAGI,KAHC,CAGD,EAAE,CAAA;EACE,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,MAAM;EAClB,OAAO,EDPD,IAAI;CCab;;;AAbL,AASQ,KATH,CAGD,EAAE,CAME,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CAEnB"
+}
