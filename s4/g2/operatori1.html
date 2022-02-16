@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altri operatori</title>
+</head>
+<body>
+    <script>
+        document.write(typeof "Mario" + "<br>");
+        typeof "Mario";
+        alert(typeof 4);
+        typeof 4;
+        document.write(typeof 8.89 + "<br>");
+        document.write(typeof "5" + "<br>");
+
+
+        document.write(typeof Mario + "<br>");
+        var mario = "nome";
+        console.log(mario);
+
+        "mario" === mario; //false sbagliato
+        document.write("mario" === "mario"); //true
+
+        var numero1 = 3;
+        var numero2 = numero1 + 2;
+
+        numero2 > numero1; //true
+        numero1 < numero2; //true
+        numero2 > (numero1 + 10); //false
+        numero2 >= (numero1 + 2); //true
+        
+        //Operatore ternario
+        
+        var anni = 15;
+        var ingresso = (anni < 18) ? "non puoi entrare" : "puoi entrare";
+        console.log(ingresso)
+    </script>
+    
+</body>
+</html>

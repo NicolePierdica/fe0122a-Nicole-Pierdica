@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape</title>
+</head>
+<body>
+    <h3>Prove di escape</h3>
+    <p id="escape"></p>
+    <script>
+
+        document.getElementById('escape').innerHTML = "hai letto \"il Signore degli anelli\" ? ";
+        var backslash = "Questo \\ è un backslash";
+        alert(backslash);
+
+        document.getElementById('escape').innerHTML = "hello \n\ world";
+
+        //document.getElementById('escpae').innerHTML = "Hello \ world";
+
+        document.getElementById('escape').innerHTML = "Hello " + "world" +
+        "Ciao a tutti";
+
+        var pet = "coniglio";
+        console.log(typeof pet); //tipo dato = stringa
+
+        var pet1 = new String('coniglio'); //tipo dato = oggetto
+        console.log(typeof pet1);
+
+        console.log(pet == pet1); //true
+        console.log(pet === pet1); //false
+    </script>
+    
+</body>
+</html>

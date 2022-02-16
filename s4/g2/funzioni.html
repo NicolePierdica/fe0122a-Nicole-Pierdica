@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni in JS</title>
+</head>
+<body>
+    <script>
+        var nome = "Nicole";
+        var job = "web developer";
+
+        document.write(testHoisting()); //hoisting
+
+        //Definizione della funzione
+        function datiUtente()
+        {
+            document.write(" Mi chiamo: " + nome + " e sono una " + job + " ");
+        }
+
+        function somma()
+        {
+            alert(4 * 3);
+        }
+
+        function operazione()
+        {
+            return 7 * 7;
+        }
+
+        function testHoisting()
+        {
+            return "L'Hoisting funziona.";
+
+        }
+        //Invoco la funzione
+        datiUtente();
+        somma();
+        document.write(operazione());
+
+        let usoThis = this;
+        console.log("Io sono: " + usoThis);
+        document.write(" " + typeof this);
+
+
+    </script>
+    
+</body>
+</html>

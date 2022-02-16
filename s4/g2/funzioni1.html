@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funzioni con parametri</title>
+</head>
+<body>
+    <script>
+        function somma(numero1, numero2)
+        {
+            //return numero1 + numero2;
+            
+        }
+
+        document.write(somma(10, 3));
+
+        function somma(numero1, numero2)
+        {
+            //return numero1 + 5;
+
+        }
+
+        document.write(somma(9));
+
+        let numero = 8;
+
+        function somma(numero1, numero2)
+        {
+            //return numero1 + numero;
+        }
+
+        document.write(somma(3));
+
+
+        var sottrazione = function(numero3, numero4)
+        {
+            return numero3 - numero4;
+        }
+        alert(sottrazione(18,9));
+
+        var operazione = sottrazione(10, 2);
+        alert(operazione);
+
+        var saluto = "Ciao a tutti dalla variabile self";
+
+        (function()
+        {
+        console.log(saluto);
+        }) ();
+
+        var luogo = "Ancona";
+
+        function utente()
+        {
+            var nome = "Nicole";
+            alert("Mi chiamo: " + nome + " e sono di " + luogo);
+        }
+
+        utente();
+        console.log(luogo);
+        //console.log(nome); //undefined variabile locale
+
+        function operazioni()
+        {
+            var num = 10;
+            function somma()
+            {
+                console.log(num + num);
+            }
+                return somma(); 
+        }
+        
+        operazioni();
+
+        function saluti()
+        {
+            return 'Hello world';
+        }
+
+        saluti = () => 'Ciao a tutti';
+        alert(saluti());
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
