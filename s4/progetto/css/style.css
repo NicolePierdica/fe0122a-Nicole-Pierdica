@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+.calculator {
+ padding: 10px;
+ border-radius: 1em;
+ height: 300px;
+ width: 200px;
+ margin: auto;
+ background-color: #191b28;
+ box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.display {
+ font-family: 'Orbitron', sans-serif;
+ background-color: #dcdbe1;
+ border: solid black 0.5px;
+ color: black;
+ border-radius: 5px;
+ width: 196px;
+ height: 50px;
+ 
+}
+.tasto {
+ padding: 11px;
+ font-family: 'Orbitron', sans-serif;
+ background-color: #38a199;
+ color: white;
+ border: solid black 0.5px;
+ border-radius: 5px;
+ outline: none;
+ width: 45px;
+}
+.tasto:active {
+ background: #e5e5e5;
+ -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+ -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+ box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+.uguale-tasto {
+    padding: 13px;
+    width: 190px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #d618d6;
+    color: white;
+    border: solid black 0.5px;
+    border-radius: 5px;
+    outline: none;
+   }
+
+.tasto-cancella{
+    padding: 8px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #7238a1;
+    color: white;
+    border: solid black 0.5px;
+    border-radius: 5px;
+    outline: none;
+    width: 44px;
+   }
+.content{
+    text-align: center;
+}
+.content1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}   
+
+.content2{
+    margin-bottom: 5px;
+}
+.content3{
+    margin-bottom: 5px;
+}
+
+.content4{
+    margin-bottom: 5px;
+}
