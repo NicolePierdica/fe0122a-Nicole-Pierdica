@@ -10,4 +10,5 @@ function n(dato){
   document.getElementById("operazioni").value=""; 
  }
 
+
  

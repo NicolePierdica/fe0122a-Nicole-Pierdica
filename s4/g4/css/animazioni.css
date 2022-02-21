@@ -1,0 +1,44 @@
+.blocco{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: fixed;
+    border-radius: 100px;
+}
+
+.blocco1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(43, 226, 73);
+    position: fixed;
+    border-radius: 100px;
+    
+}
+
+.willy{
+    width: 150px;
+    animation: rotation 5s infinite linear;
+    padding: 300px;
+    animation-direction: alternate-reverse;
+      
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.shaquille{
+    width: 150px;
+    
+    animation: smoothbounceball 3s infinite linear;
+}
+
+@keyframes smoothbounceball{
+    from { transform: translate3d(300px, 0, 100px);}
+    to { transform: translate3d(100px, 200px, 100px);}
+}
