@@ -11,7 +11,7 @@ switch(weekend){      //costrutto che può presentare più casi con diverse istr
         console.log('questo è il caso 2');
         break;   
     default:          //solitamente messo alla fine della catena
-        console.log('questo è il caso di deafult');     
+        console.log('questo è il caso di default');     
 }
 
 
