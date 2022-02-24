@@ -1,0 +1,16 @@
+.pointer{
+    cursor: pointer;
+}
+
+li{
+    font-size: 30px;
+    list-style:decimal-leading-zero;
+    text-align: center;
+    list-style: none;
+}
+
+li:active{
+    text-decoration: line-through;
+}
+
+

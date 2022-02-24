@@ -22,7 +22,7 @@ function cambiaSfondo() {
 
 tasti.forEach(function(bottone){
 
-    bottone.addEventListener('click', cambiaSfondo)
+    bottone.addEventListener('click', cambiaSfondo) 
 
 })
 
