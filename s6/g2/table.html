@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table selettori</title>
+</head>
+<body>
+    <center>
+        <h1>Esempio</h1>
+    </center>
+    <table border="2">
+        <tr>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Telefono</th>
+        </tr>
+        <tr>
+            <td>Alessio</td>
+            <td></td>
+            <td>123234656</td>
+        </tr>
+        <tr>
+            <td>Mario</td>
+            <td>Rossi</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>Primo</li>
+        <li>Secondo</li>
+        <li>Terzo</li>
+        <li>Quarto</li>
+        <li>Quinto</li>
+        <li>Sesto</li>
+    </ul>
+
+    <form action="">
+        Nome <input type="text" name="nome"><br>
+        Email <input type="email" name="email"><br>
+        <button type="submit">Invia</button>
+    </form>
+
+    <p><span>Benvenuto!</span>Mi chiamo Nicole</p>
+    <p>Sei su <span>Epicode School</span>.</p>
+    <button>Accendi&Spegni</button>
+    <div>Stai frequentando il corso <span>jQuery</span></div>
+
+    Lista delle cose da fare: <span id="span1">Clicca per cambiare visualizzazione</span>
+    <ul id="ul1">
+        <li class="esempio">Prima</li>
+        <li>Seconda</li>
+        <li>terza</li>
+    </ul>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {    // versione breve del document ready
+           $(":empty").css("background-color", "yellow");   // :empty seleziona gli elementi vuoti
+           $("tr:even").css("color", "green");              // :even  seleziona gli elementi pari
+           $("tr:odd").css("background-color", "orange");   // :odd  seleziona gli elementi dispari
+           $("li:first-child").css("color", "pink")         // :firstchild seleziona il primo figlio
+           $("li:last-child").css("color", "brown");        // :last-child seleziona l'ultimo figlio
+           $("li:nth-child(3)").css("color", "purple");     // :nth-child() seleziona il figlio indicato
+           $(":text").css("background-color", "grey");      // :text seleziona il type text
+           $("p").find("span").css("color", "red");         // .find seleziono ciò che indico nella parentesi tonda dopo .find
+           $("p").find("span").hover(function(){            // con la funzione .hover seleziono gli span di p a cui posso aggiungere e togliere la classe "evidenzia"
+               $(this).addClass("evidenzia");
+           }, function(){
+               $(this).removeClass("evidenzia");
+           
+           });
+           $("button").click(function(){
+               $("p").toggleClass("accendi");              // accende e spegne quello che ho assegnato con css
+           });
+
+           $("#span1").click(function(){
+               $("#ul1").each(function(){
+                   $(this).toggleClass("evidenzia");
+               })
+           });
+
+           $("li").filter(".esempio").css("background-color", "green");  // seleziona solo il li con class = esempio
+
+        });
+    </script>
+</body>
+</html>

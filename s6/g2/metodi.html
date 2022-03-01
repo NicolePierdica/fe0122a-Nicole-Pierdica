@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body class="fratelli">
+    <div class="genitore">
+        Questo è l'elemento genitore
+        <p>
+            Questo è il figlio
+            <span>Questo è il nipote(figlio del figlio)</span>
+        </p>
+    </div>
+
+    <div> Div genitore</div>
+    <p>Elemento p</p>
+    <h2>Elemento h2</h2>
+    <h4>Elemento h4</h4>
+    <p>Elemento p</p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $("div").children().css({"color":"blue"});    //esempi di traversing
+            $("h2").siblings("p").css({"color":"red"});
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <p>Epicode School</p>
+    <button>Clicca qui per aggiungere un paragrafo</button>
+    <p>Secondo paragrago</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            //$("p").mouseenter(function(){                    //mouseenter
+                //$("p").css("background-color", "#1AD9DA");
+            //});
+
+            //$("p").mouseenter(function(){
+                //$("p").addClass("sfondo");
+            // });
+
+            //$("p").mouseout(function(){                    //mouseout
+                //$("p").removeClass("sfondo");
+            //});
+
+            //$("p").on("mouseover mouseout", function(){  // stesso risultato con metodo on
+                //$(this).toggleClass("sfondo");
+            //});
+
+            //$("div").on("click", "p", function(){        //gestisco il click sul selettore
+                //$(this).slideUp();      // this si riferisce al selettore    aggiungo lo slideUp
+            //});
+            //$("button").click(function(){
+                //$("<p>Nuovo paragrafo</p>").insertAfter("button");    //inserisco dopo il bottone un nuovo paragrafo
+            //});
+
+            $("p").on("mouseover", function(){
+                $(this).css("background-color", "yellow");
+                $("button").click(function(){
+                    $("p").off("mouseover");
+                });
+          
+               
+
+            });
+        });
+
+    </script>
+</body>
+</html>

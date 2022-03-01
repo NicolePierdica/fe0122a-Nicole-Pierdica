@@ -1,0 +1,19 @@
+span {
+    color: chartreuse;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.evidenzia {
+    background: cornflowerblue;
+    font-style: italic;
+}
+
+.accendi {
+    background-color: blueviolet;
+    font-size: 35px;
+}
+
+ul {
+    font-size: 30px;
+}
