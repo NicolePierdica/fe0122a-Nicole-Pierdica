@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Animate</title>
+</head>
+<body>
+    <button id="inizia">Inizia l'animazione</button>
+    <button id="stop">Ferma l'animazione</button>
+    <br><br>
+    <div id="box"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            /*$("button").click(function(){
+                $("#box").animate({
+                    left: "+=300px",
+                    widht: "+=400px",             // al posto dei numeri posso anche mettere "hide" o "show" o "toggle"
+                    height: "+=400px",
+                    borderWidht: "+=500px",       //valori relativi
+                    opacity: 0.2
+            });
+            
+            });*/
+
+            /*$("button").click(function(){
+                $("#box").animate({widht: "150px", height: "150px"});
+                $("#box").delay(2000).animate({widht: "500px"});
+                $("#box").slideUp(6000);
+
+            });
+            $("#stop").click(function(){
+                $("#box").stop();        // .finish fa completare immediatamente l'animazione
+            });*/
+
+            $("#inizia").click(function(){
+                $("#box").animate({
+                    widht: "10px"
+                }, {                          //sintassi avanzata con doppia parentesi {}
+                    duration: 4000,
+                    easing: "linear"
+                });
+            });
+
+        });
+
+    </script>
+</body>
+</html>

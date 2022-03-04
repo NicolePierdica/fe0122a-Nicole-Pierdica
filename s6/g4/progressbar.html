@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang = "it">
+   <head>
+      <meta charset = "utf-8">
+      <title>Barra di caricamento</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <style>
+        .ui-widget-header {
+           background: #eb09eb;
+           border: 1px solid #DDDDDD;
+           color: #333333;
+           font-weight: bold;
+        }
+        .progress-label {
+           position: absolute;
+           left: 50%;
+           top: 13px;
+           font-weight: bold;
+           text-shadow: 1px 1px 0 #fff;
+        }
+     </style>
+      
+      <script>
+         
+          $(function() {
+            var progressbar = $( "#progressbar-5" );
+            progressLabel = $( ".progress-label" );
+            $( "#progressbar-5" ).progressbar({
+               value: false,
+               change: function() {
+                  progressLabel.text( 
+                     progressbar.progressbar( "value" ) + "%" );
+               },
+               complete: function() {
+                  progressLabel.text( "Loading Completed!" ).css("center");
+               }
+            });
+            $(document).ready(function(){
+             $("button").click(function(){
+            function progress() {
+               var val = progressbar.progressbar( "value" ) || 0;
+               progressbar.progressbar( "value", val + 1 );
+               if ( val < 3000 ) {
+                  setTimeout( progress, 100 );
+               }
+            }
+            setTimeout( progress, 1000 );
+        
+          });
+         });
+            
+        });
+      </script>
+   </head>
+   
+   <body>
+    <div id = "progressbar-5">
+        <div class = "progress-label">
+           Loading...
+        </div>
+     </div>
+     <div id = "progressbar-4"></div>
+     <button>Download</button>
+     
+   </body>
+</html>

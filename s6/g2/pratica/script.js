@@ -24,18 +24,13 @@
 
     // imposta il focus sul primo tag ancor dell'h2
 
-    function dynamicFaq(){
+    
        
         $("h2").click(function(){
-            $(this).show("div");
-            $(this).next().slideToggle("div");
             $(this).toggleClass("meno");
-        
-            });   
+            $(this).next().toggle();
+        });   
               
-    };
+   
 
-    $(document).ready(function(){
-        dynamicFaq();
-    });
-     
+    

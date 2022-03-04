@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button type="button" class="show-btn">Mostra il testo</button>
+        <button type="button" class="hide-btn">Nascondi il testo</button>
+        <p>Esempio paragrafo</p>
+        <p>Esempio paragrafo</p>
+        <p>Esempio paragrafo</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(() => {
+            $(".show-btn").click(function(){
+                $("p").show("fast");          //oppure posso mettere i numeri che si contano in secondi e decido la velocità di esecuzione
+            });
+            $(".hide-btn").click(function(){
+                $("p").hide("slow");
+                
+            });
+            $
+        });
+
+    </script>
+</body>
+</html>

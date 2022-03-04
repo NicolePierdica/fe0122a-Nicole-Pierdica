@@ -1,0 +1,11 @@
+#box {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: red;
+    position: absolute;
+
+
+}

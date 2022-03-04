@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form in jQuery</title>
+</head>
+<body>
+    <form id="mioform" class="centra">
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome" required>*<br>
+        <label for="cognome">Cognome</label><br>
+        <input type="text" id="cognome" name="cognome" required>*<br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" required disabled>*</label>
+
+        <br>
+
+        <input type="radio" id="radio1" name="btnRadio" value="radio1">
+        <label for="radio1">Radio 1</label><br>
+        <input type="radio" id="radio1" name="btnRadio" value="radio2">
+        <label for="radio2">Radio 2</label><br>
+        <input type="radio" id="radio3" name="btnRadio" value="radio3">
+        <label for="radio3">Radio 3</label><br>
+
+        <br>
+
+
+        <input type="checkbox" id="checkBox1" name="checkBox1" value="checkBox1">
+        <label for="checkbox1">Checkbox 1</label><br>
+        <input type="checkbox" id="checkBox1" name="checkBox2" value="checkBox2">
+        <label for="checkbox2">Checkbox 2</label><br>
+        <input type="checkbox" id="checkBox1" name="checkBox3" value="checkBox3">
+        <label for="checkbox3">Checkbox 3</label><br>
+
+        <br>
+        <input type="submit" value="Invia">
+    </form>
+
+    <button>Applica jQuery</button>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            /*const btn = $("button")
+            $(document).ready(function(){
+                btn.click(function(){
+                    $("input:text").val("Epicode School");
+                });
+                btn.click(function(){
+                    $("input:password").prop("disabled, false");
+                });
+                btn.click(function(){
+                    $("input[name='btnRadio']").first().attr("checked","checked");
+                });
+                 
+                const inCheck = $("input:checkbox")
+
+                btn.click(function(){
+                    inCheck.attr("checked","checked");
+                })
+
+                btn.click(function(){
+                    $("input:submit").click(function(){
+                        $("#mioform").submit(() =>{
+                            alert("Form inviato");
+                        });
+                    });
+                });
+            });*/
+
+            $(() => {
+                $("input").focus(function(){
+                    $(this).parent().find(".label-txt").addClass("label-active");
+                });
+
+                $("input").focusout(function(){
+                    if($(this).val() == ""){
+                        $(this).parent().find(".label-txt").removeClass("label-active");
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
