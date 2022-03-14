@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <div id="error"></div>
+    <form id="form" class="form" method="GET">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+            <label for="cognome">Cognome:</label>
+            <input type="text" id="cognome" name="cognome">
+        </div>
+        <div >
+            <label for="mail">Inserisci email:</label>
+            <input type="email" name="email" id="email" placeholder="la tua mail">
+        </div>
+        <div>
+            <label for="password">Inserisci password</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <div>
+            <button type="submit">Registrati</button>
+        </div>
+      </form>
+      <script src="myScript.js"></script>
+    
+</body>
+</html>
