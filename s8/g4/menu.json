@@ -1,0 +1,27 @@
+[
+    {
+        "nome":"Margherita",
+        "tipo":"Napoletana",
+        "prezzo":5,
+        "disponibile":true
+    },
+    {
+        "nome":"Capricciosa",
+        "tipo":"Napoletana",
+        "prezzo":8,
+        "disponibile":true
+
+    },
+    {
+        "nome":"Americana",
+        "tipo":"Napoletana",
+        "prezzo":6,
+        "disponibile":true
+    },
+    {
+        "nome":"Hawaiana",
+        "tipo":"Romana",
+        "prezzo":150,
+        "disponibile":false
+    }
+]
